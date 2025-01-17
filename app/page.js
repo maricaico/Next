@@ -1,21 +1,28 @@
-export default function NovaRotaHome() {
+import Link from 'next/link'
+
+
+export default function Home(){
+
     return (
-        <div>
-            <h2>Conteúdo da Nova Rota</h2>
-        </div>
-    );
-}
-export function WelcomeMessage() {
-    return (
-        <div>
-            <h2>Página dedicada à Festa de Santana!</h2>
-        </div>
-    );
-}
-export function ContactInfo() {
-    return (
-        <div>
-            <h2>Informações para os usuários!</h2>
-        </div>
-    );
+
+        <div>           
+
+            <div>
+
+                <h1>
+
+                    Viva Santana!
+
+                </h1>
+
+                <Link href="/novarota">Rota1</Link> <br/><br/>
+
+                <a href="/novarota">Rota 1, jeito antigo</a>
+
+            </div>
+
+        </div>       
+
+    )
+
 }
